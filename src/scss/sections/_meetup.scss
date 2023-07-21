@@ -1,0 +1,27 @@
+// 
+// Meetup
+// 
+
+.meetup-section {
+    padding: 10rem 0;
+
+    .featured-text {
+        padding: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 0 0 2rem;
+            border-left: 0.5rem solid $primary;
+        }
+    }
+
+    .meetup-text {
+        padding: 3rem;
+        font-size: 100%;
+        text-align: left;
+        
+
+        @include media-breakpoint-up(lg) {
+            padding: 5rem;
+        }
+    }
+}
