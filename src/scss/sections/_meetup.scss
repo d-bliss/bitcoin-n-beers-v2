@@ -1,6 +1,6 @@
-// 
+//
 // Meetup
-// 
+//
 
 .meetup-section {
     padding: 10rem 0;
@@ -18,10 +18,16 @@
         padding: 3rem;
         font-size: 100%;
         text-align: left;
-        
 
         @include media-breakpoint-up(lg) {
             padding: 5rem;
         }
+    }
+}
+
+@media (min-width: 992px) { /* This targets large screens and up */
+    .bitcoin-logo {
+        max-width: 300px; /* Adjust as per your desired size */
+        margin: 0 auto; /* This will center the logo */
     }
 }

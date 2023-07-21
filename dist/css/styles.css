@@ -11070,7 +11070,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 30rem 0;
+  padding: 20rem 0;
   background: linear-gradient(to bottom, transparent, transparent), url("../assets/img/bnb-background-Image.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -11120,8 +11120,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -11151,25 +11150,12 @@ body {
   }
 }
 
-.signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+@media (min-width: 992px) { /* This targets large screens and up */
+  .bitcoin-logo {
+    max-width: 300px; /* Adjust as per your desired size */
+    margin: 0 auto; /* This will center the logo */
+  }
 }
-.signup-section .form-signup input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
-
 .contact-section {
   padding-top: 5rem;
 }

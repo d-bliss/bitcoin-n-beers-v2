@@ -36,9 +36,9 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#about') About
                         li.nav-item
-                            a.nav-link(href='#projects') Meetup
+                            a.nav-link(href='#meetup') Meetup
                         li.nav-item
-                            a.nav-link(href='#signup') Contact
+                            a.nav-link(href='#contact') Contact
 
         // Masthead
         header.masthead
@@ -55,108 +55,56 @@ html(lang='en')
                             | We meet to learn about cryptocurrency, blockchain and decentralized Web3 technology in comfortable low-key settings.
                 // img.img-fluid(src='assets/img/cheers-meetup.jpg', alt='...')
 
-        // Projects
-        section#projects.projects-section.bg-light
-            .container.px-4.px-lg-5
-                // Featured Project Row
-                .row.gx-0.mb-4.mb-lg-5.align-items-center
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bnb-meetup.jpg', alt='...')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-xl-left
-                            a.btn.btn-danger.mb-3(href='https://www.meetup.com/Bitcoin-n-Beers-Vancouver/') Join our Meetup
-                            p.text-black-50.mb-0.text-left.lead
-                                | No tech background? No worries. Join us, whether you're a crypto newbie or a seasoned vet. Our meetups fuse fun and learning, spotlighting the promise of digital currencies like Bitcoin. Dive into lively discussions and be part of our community!
-                // Project One Row
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
-                    .col-lg-6
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
-                                    p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                // Project Two Row
-                .row.gx-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='...')
-                    .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
-                                    p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well!
+        // Meetup
+section#meetup.meetup-section.bg-light
+    .container.px-4.px-lg-5
+        // Featured Project Row
+        .row.gx-0.mb-4.mb-lg-5.align-items-center
+            .col-xl-8.col-lg-7
+                img.img-fluid.mb-3.mb-lg-0(src='assets/img/bnb-meetup.jpg', alt='Meetup image of people drinking beer')
+            .col-xl-4.col-lg-5
+                .meetup-text.text-left.text-xl-left
+                    a.btn.btn-danger.mb-3(href='https://www.meetup.com/Bitcoin-n-Beers-Vancouver/') Join our Meetup
+                    p.text-black-50.mb-0.text-left.lead
+                        | No tech background? No worries. Join us, whether you're a crypto newbie or a seasoned vet. Our meetups fuse fun and learning, spotlighting the promise of digital currencies like Bitcoin. Dive into lively discussions and be part of our community!
+        
+        // Bitcoin Price Row section
+        .row.gx-0.mb-5.mb-lg-0.justify-content-center.bg-light
+            .col-lg-4
+            .col-lg-4.col-12.text-center.d-flex.flex-column.justify-content-center
+                .logo-wrapper(style='position: relative; padding-bottom: 100%;')
+                    img.img-fluid.bitcoin-logo(src='assets/img/bitcoin-logo.jpg', alt='Bitcoin Logo', style='position: absolute; max-width: 90%; max-height: 90%; top: 50%; left: 50%; transform: translate(-50%, -50%);')
+                .project-text
+                    h4.text-black Bitcoin Price
+                    p#bitcoin-price.mb-4.text-black-50 Loading...
+            .col-lg-4
 
-        // Signup
-        section#signup.signup-section
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-md-10.col-lg-8.mx-auto.text-center
-                        i.far.fa-paper-plane.fa-2x.mb-2.text-white
-                        h2.text-white.mb-5 Subscribe to receive updates!
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-                        
-                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
-
-                            // Email address input
-
-                            .row.input-group-newsletter
-                                .col
-                                    input#emailAddress.form-control(
-                                        type='email',
-                                        placeholder='Enter email address...',
-                                        aria-label='Enter email address...',
-                                        data-sb-validations='required,email'
-                                    )
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
-                                | An email is required.
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
-                                | Email is not valid.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3.mt-2.text-white
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3.mt-2 Error sending message!
 
         // Contact
-        section.contact-section.bg-black
+        section#contact.contact-section.bg-black
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
+                    // Merch Card
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
-                                i.fas.fa-map-marked-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Address
+                                i.fas.fa-tshirt.text-primary.mb-2
+                                h4.text-uppercase.m-0 Merch
                                 hr.my-4.mx-auto
-                                .small.text-black-50 4923 Market Street, Orlando FL
+                                .small.text-black-50
+                                    a(href='https://www.redbubble.com/people/bitcoin-n-beers/shop?artistUserName=bitcoin-n-beers&collections=917679&iaCode=all-departments&sortOrder=relevant' target="_blank" rel="noopener noreferrer") Shop Now
+
+                    // Bitcoin Resources Card
+                    .col-md-4.mb-3.mb-md-0
+                        .card.py-4.h-100
+                            .card-body.text-center
+                                i.fas.fa-book-open.text-primary.mb-2
+                                h4.text-uppercase.m-0 Bitcoin Resources
+                                hr.my-4.mx-auto
+                                .small.text-black-50
+                                    a(href='https://www.lopp.net/bitcoin-information.html' target="_blank" rel="noopener noreferrer") Learn More
+
+                    // Email Card
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
@@ -164,36 +112,27 @@ html(lang='en')
                                 h4.text-uppercase.m-0 Email
                                 hr.my-4.mx-auto
                                 .small.text-black-50
-                                    a(href='#!') hello@yourdomain.com
-                    .col-md-4.mb-3.mb-md-0
-                        .card.py-4.h-100
-                            .card-body.text-center
-                                i.fas.fa-mobile-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Phone
-                                hr.my-4.mx-auto
-                                .small.text-black-50 +1 (555) 902-8832
+                                    | info@bitcoinandbeers.com
+
                 .social.d-flex.justify-content-center
-                    a.mx-2(href='#!')
+                    a.mx-2(href='https://twitter.com/BitcoinNBeers' target="-blank" rel="noopener noreferrer")
                         i.fab.fa-twitter
-                    a.mx-2(href='#!')
-                        i.fab.fa-facebook-f
-                    a.mx-2(href='#!')
-                        i.fab.fa-github
+                    a.mx-2(href='https://www.meetup.com/Bitcoin-n-Beers-Vancouver/' target="-blank" rel="noopener noreferrer")
+                        i.fab.fa-meetup 
+                    a.mx-2(href='https://www.linkedin.com/company/bitcoin-n-beers/' target="-blank" rel="noopener noreferrer")
+                        i.fab.fa-linkedin
+
+
 
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
             .container.px-4.px-lg-5
-                | Copyright &copy; Your Website 2023
+                | Copyright &copy; Bitcoin-N-Beers 2023
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
         script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
