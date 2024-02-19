@@ -1,6 +1,6 @@
 /*!
 * Start Bootstrap - Bitcoin-N-Beers v2.0.0 (https://www.bitcoinandbeers.com/)
-* Copyright 2023-2023 Daniel Bliss
+* Copyright 2023-2024 Daniel Bliss
 Licensed under UNLICENSED (https://github.com/d-bliss/bitcoin-n-beers-v2/blob/master/LICENSE)
 */
 //
