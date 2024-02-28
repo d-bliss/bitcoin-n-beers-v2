@@ -1,6 +1,6 @@
 # Bitcoin-N-Beers Website
 
-Bitcoin-N-Beers is a community of cryptocurrency enthusiasts. We're a volunteer-run group dedicated to fostering knowledge about cryptocurrency, blockchain, and decentralized technology in relaxed, informal settings. Our gatherings are open to everyone — from seasoned experts to newcomers curious about the world of crypto.
+Bitcoin-N-Beers is a volunteer-run group dedicated to fostering knowledge about Bitcoin, crypto, blockchain, Web3 and other decentralized technology in relaxed, informal settings. Our gatherings are open to everyone — from seasoned experts to newcomers curious about the world of crypto.
 
 🌐 [Visit our live website](https://www.bitcoinandbeers.com/)
 
@@ -22,7 +22,7 @@ You must have npm installed in order to use this build environment.
 
 ## Copyright and License
 
-Ⓒ 2023 Daniel Bliss. All Rights Reserved.
+Ⓒ 2017 Daniel Bliss. All Rights Reserved.
 
 Unauthorized reproduction, distribution, or modification of this website, regardless of the medium, is strictly prohibited. The content is proprietary and confidential.
 
